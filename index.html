@@ -3,43 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Una pregunta especial para ti</title>
+    <title>te amo</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>Mi chiquitica hermosa</h1>
-        <p>Desde que te conocí, mi vida se ha llenado de color y alegría. Cada momento a tu lado es un regalo que atesoro con todo mi corazón.</p>
-        <p>Hoy quiero preguntarte algo muy especial.</p>
+        <h1>Mi ojitos lindos </h1>
+        <p>Desde que te conoci llenaste mi vida de mucho amor, Cada momento a tu lado es un regalo que atesoro con todo mi corazón.</p>
+        <p>te voy a hacer una pregunta muy importante pa mi amor.</p>
         <div class="heart">❤️</div>
         <p>¿puedo ser tu novio?</p>
         <button class="button" onclick="respuesta()">Sí, ¡acepto!</button>
         
-        <div class="share-link">
-            <p>Comparte este momento especial:</p>
-            <input type="text" id="shareLink" readonly>
-            <button onclick="copiarEnlace()">Copiar enlace</button>
-        </div>
     </div>
 
     <script>
         function respuesta() {
-            alert('¡Me haces la persona más feliz del mundo! Te quiero mucho. ❤️');
+            alert('amor gracias por aceptarme me haces el hombre mas feliz de este mundo te amo mucho mi pollita.❤️');
         }
 
-        function copiarEnlace() {
-            var copyText = document.getElementById("shareLink");
-            copyText.select();
-            copyText.setSelectionRange(0, 99999);
-            document.execCommand("copy");
-            alert("Enlace copiado al portapapeles!");
-        }
-
-        // Generar y mostrar el enlace cuando la página se carga
-        window.onload = function() {
-            var shareLink = window.location.href;
-            document.getElementById("shareLink").value = shareLink;
-        }
     </script>
 </body>
 </html>
